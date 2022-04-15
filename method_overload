@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string sayı=Console.ReadLine();
+            int.TryParse(sayı ,out int sayı1);
+            Console.WriteLine(sayı1);
+
+
+             islemler islem=new islemler();
+            int num1 = 45,num=96;
+            string a = "aa", b = "bb";
+            Console.WriteLine(islem.topla(num1,num));
+            Console.WriteLine(islem.topla(a,b));
+
+
+            Console.ReadKey();
+        }
+        class islemler 
+        {
+         public int topla(int a,int b)
+         {
+                return a + b; 
+         }
+         public string topla(string a,string b) 
+         {
+                return a + b;
+         }
+
+        }
+    }
+}
